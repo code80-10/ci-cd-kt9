@@ -1,0 +1,20 @@
+Jenkins verification (2026-10-22)
+
+kt9-parametric #3: SUCCESS
+DEBUG=false -> Makefile DEBUG=0
+Compiler flags: -std=c++17 -Wall -Wextra -O2
+Program output: Build mode: RELEASE
+
+kt9-parametric #4: SUCCESS
+DEBUG=true -> Makefile DEBUG=1
+Compiler flags: -std=c++17 -Wall -Wextra -g -O0 -DDEBUG
+Program output: Build mode: DEBUG
+
+kt9-pipeline #1: SUCCESS
+Stages: Checkout, Build, Run/Test
+Program output: Build mode: RELEASE
+
+kt9-multibranch indexing: SUCCESS
+Discovered branches: develop, main
+develop #1: SUCCESS (includes Develop Branch Info stage)
+main #1: SUCCESS
