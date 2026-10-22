@@ -13,6 +13,15 @@ pipeline {
             }
         }
 
+        stage('Develop Branch Info') {
+            when {
+                branch 'develop'
+            }
+            steps {
+                echo 'Running the develop branch pipeline'
+            }
+        }
+
         stage('Build') {
             steps {
                 script {
