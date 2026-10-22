@@ -1,0 +1,17 @@
+Environment:
+git version 2.53.0.windows.3
+openjdk 21.0.12.1 LTS
+g++ 16.2.0 (MSYS2)
+GNU Make 4.4.1
+
+make DEBUG=0:
+Building in RELEASE mode
+g++ -std=c++17 -Wall -Wextra -O2 src/main.cpp -o build/app.exe
+Application started successfully.
+Build mode: RELEASE
+
+make DEBUG=1:
+Building in DEBUG mode
+g++ -std=c++17 -Wall -Wextra -g -O0 -DDEBUG src/main.cpp -o build/app.exe
+Application started successfully.
+Build mode: DEBUG
