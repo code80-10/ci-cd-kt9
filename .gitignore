@@ -2,3 +2,5 @@ build/
 *.exe
 *.o
 evidence/*.png
+.jenkins/
+evidence/*.log
