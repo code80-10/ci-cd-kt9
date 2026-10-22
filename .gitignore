@@ -1,6 +1,10 @@
 build/
 *.exe
 *.o
-evidence/*.png
 .jenkins/
 evidence/*.log
+tmp/
+~$*
+*.tmp
+__pycache__/
+*.py[cod]
